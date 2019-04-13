@@ -1,0 +1,10 @@
+E,David,25,123,Programmer,2500
+E,Philip,30,678,Clerk,1800
+E,Larry,35,900,Admin,1500
+E,John,40,870,CEO,4000
+E,Merry,25,100,Secretary,1600
+S,Sara,37,143,Mobile
+S,Nima,30,675,MBA
+S,Arash,30,126,Programing
+S,Morteza,33,650,3DMax
+S,Kamran,36,190,Science

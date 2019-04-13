@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="100dp"
+        android:textSize="30sp"
+        android:text="List of " />
+
+    <EditText
+        android:id="@+id/editTextCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewCaption"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCaption"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:ems="9"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaption"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/listView"
+        app:layout_constraintTop_toBottomOf="@id/textViewCaption"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:text="ID: " />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewID"
+        app:layout_constraintBottom_toBottomOf="@id/textViewID"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewID"
+        app:layout_constraintStart_toStartOf="@id/textViewID"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:text="Age: " />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewAge"
+        app:layout_constraintBottom_toBottomOf="@id/textViewAge"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewAge"
+        app:layout_constraintStart_toStartOf="@id/textViewAge"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:text="Job: " />
+
+    <EditText
+        android:id="@+id/editTextJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="@id/textViewJob"
+        app:layout_constraintBottom_toBottomOf="@id/textViewJob"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewJob"
+        app:layout_constraintStart_toStartOf="@id/textViewJob"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Salary: " />
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewSalary"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSalary"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewSalary"
+        app:layout_constraintStart_toStartOf="@id/textViewSalary"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Prog. :" />
+
+    <EditText
+        android:id="@+id/editTextProgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/textViewProgram"
+        app:layout_constraintBottom_toBottomOf="@id/textViewProgram"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:text="Student" />
+
+    <Button
+        android:id="@+id/btnEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Employee" />
+
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:text="All" />
+</android.support.constraint.ConstraintLayout>
